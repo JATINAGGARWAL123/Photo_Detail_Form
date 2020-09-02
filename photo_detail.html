@@ -1,0 +1,241 @@
+
+<!DOCETYPE html>
+<html>
+	<head>
+<style>
+        
+      
+   
+    body
+    {
+        background-image: radial-gradient(circle,blue,red);
+    }
+.main_class
+    {
+        background-color:#e1e1fa;
+        margin:10px 300px;
+        border:1px solid black;
+        border-radius: 30px;
+    }
+    .heading
+   {
+    position:relative;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border:2px solid black;
+    background-color: skyblue;
+	text-align: center;
+       border-radius: 40px;
+   }
+    .title
+    {
+        margin-left: 40px;
+    }
+    .option
+    {
+        border: 2px dashed black;
+        width:350px;
+        margin-left: 40px;
+        margin-top: 40px;
+        float: left;
+    }
+
+
+  td
+    {
+        padding-right: 30px;
+    }
+
+.copyright
+    {
+        float: right;
+        margin-right: 40px;
+    }
+.copyright fieldset
+{
+    margin-top: 40px;
+	margin-left:auto;
+}
+.license fieldset
+{
+        
+        background-color:deepskyblue;
+        margin-left: 40px;
+        height: 50px;
+       margin-top: 400px;
+}
+ .rate
+    {
+        
+        float: left;
+        width: 300px;
+        padding-left: 20px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    .date
+    {
+        float:right;
+        margin-top: 40px;
+        margin-right: 40px;
+    
+    }
+    .submit
+    {
+    background-color: lightskyblue;
+    position: relative;
+        border-radius: 35px;
+    margin: 0px 40px;
+    padding: 10px 240px;
+    margin-top: 250px;
+	
+    }
+    .submit_css{
+
+  background-color: green;
+  border: 2px solid black;
+        border-radius:28px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+
+}
+
+        
+        
+        </style>
+	</head>
+	<body>
+        <div class="main_class">
+		<div class="heading">
+            <h2><b>PHOTO DETAILS</b></h2>
+		</div>
+		<br>
+		<br>
+	<form action="/action_page.php">
+		<div class="title">
+		<label for="text">Title:</label><br>
+            <textarea id="text" name="text" rows="2" cols="112"></textarea><br><br>
+		</div>
+		
+		<div class="title">
+		<label>Descriptions:</label><br>
+			<textarea name="message" rows="5" cols="112" ></textarea><br><br>
+		</div>
+		
+        
+        
+		<div class="option">
+            <table height="50%">
+                <tr class="tr"><td>
+                    <label for="Continent"> Continents:</label></td>
+                    <td>
+		<select name="Continent">
+            <option>Choose Continent</option>
+		    <option>Asia</option>
+			<option>Africa</option>
+			<option>Europe</option>
+		    <option>North America</option>
+		    <option>South America</option>
+                        </select></td>
+                </tr>
+                
+                <tr><td>
+                    <lable for="Country">Choose Country:</lable></td><td>
+		<select name="Country">
+		    <option>India</option>
+			<option>US</option>
+			<option>Mexcico</option>
+		    <option>France</option>
+		    <option>Sri Lanka</option>
+                    </select></td></tr>
+                <tr><td>
+                    <lable for="city">Enter city:</lable></td><td>
+                    <input type="text" name="city"></td>
+                </tr>
+                <tr><td>
+                    <lable for="email">email:</lable></td>
+                    <td>
+		<input type="email" name="email" placeholder="xyz@gmail.com">
+                    </td></tr>
+                <tr>
+                    <td>
+                        <lable for="phone">phone no:</lable></td>
+                    <td><input type="tel" name="phone" placeholder="0123-456-789"></td>
+                </tr>
+            </table>
+        </div>
+
+        
+        
+		<div class="copyright">
+	   <fieldset style="width:200px; height:auto">
+		<h2>Copyright?</h2>
+		   <p>
+		   <input type="radio" name="copyright">
+		   <lable for="copyright">All rights reserved</lable><br>
+		   <input type="radio" name="copyright">
+		   <lable for="copyright">Creative commons</lable><br>
+		   </p>
+		</fieldset><br>
+		
+		<fieldset style="width:200px; height:auto">
+		<h2>Creative Commons Types:</h2>
+		    <input type="checkbox">
+			<lable>Attributions</lable><br>
+			<input type="checkbox">
+			<lable>Noncommercial</lable><br>
+			<input type="checkbox">
+			<lable>No Derivative works</lable><br>
+			<input type="checkbox">
+			<lable>Share Alike</lable>
+		</fieldset><br><br>
+		</div>
+		
+		<div class="license">
+        <fieldset style="width:800px; height:auto">
+        <input type="checkbox">
+		<lable>I accepts the software licence.</lable>
+		</fieldset>
+		</div>
+		
+		<div class="rate">
+		<lable>Rate this photo:</lable><br>
+		<input type="number" min="1" max="10" name="rate">
+		<br><br>
+		
+		<lable>Color Collection:</lable><br>
+		<input type="color" name="color">
+		</div>
+		<div class="date">
+		<fieldset style="width:200px;">
+		<lable>Date Taken:</lable><br>
+		<input type="Date" name="Date"><br><br>
+			<lable>Time Taken:</lable><br>
+			<input type="time" name="time"><br>
+		</fieldset><br><br>
+			
+		</div>	
+        
+		
+		<div class="submit">
+            <div class="submit_css">
+                <input type="button" value="Submit Form"></div><div class="submit_css"><input type="button" value="Clear Form"></div><br>
+            
+		</div>
+		<marquee>please submit all given details</marquee>
+		
+		</form>
+            
+        </div>	
+	</body>
+
+
+</html>
